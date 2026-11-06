@@ -1,0 +1,6 @@
+{
+  "name": "FloodGuard",
+  "description": "Global AI-Powered Flood Intelligence, Life-Saving & Offline Emergency Response System",
+  "requestFramePermissions": ["geolocation", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "AquaShield Emergency Response",
+  "short_name": "AquaShield",
+  "description": "Global AI-Powered Flood Intelligence & Offline Emergency Response System",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

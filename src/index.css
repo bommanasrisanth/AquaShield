@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* 
+ * Warm, Human-Made Aesthetic Design System
+ * Soothing organic paper neutrals, soft tactile shadows, generous rounded geometry,
+ * and high-contrast accessible typography for calm emergency decision-making.
+ */
+
+:root {
+  --canvas-warm: #faf8f5;
+  --surface-warm: #ffffff;
+  --surface-card: #fffdfa;
+  --border-warm: #ede7de;
+  --border-warm-subtle: #f4efe8;
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-muted: #78716c;
+  
+  --shadow-tactile-sm: 0 2px 8px -1px rgba(45, 36, 27, 0.04), 0 1px 3px rgba(45, 36, 27, 0.02);
+  --shadow-tactile-md: 0 10px 30px -4px rgba(45, 36, 27, 0.06), 0 3px 10px -2px rgba(45, 36, 27, 0.03);
+  --shadow-tactile-lg: 0 20px 48px -8px rgba(45, 36, 27, 0.08), 0 6px 18px -4px rgba(45, 36, 27, 0.04);
+}
+
+/* Warm, gentle background and selection */
+html {
+  background-color: #faf8f5;
+  color: #292524;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #faf8f5;
+  color: #292524;
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: #fef3c7;
+  color: #78350f;
+}
+
+/* Smooth tactile scrollbars */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf8f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6cebf;
+  border-radius: 9999px;
+  border: 2px solid #faf8f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8ac99;
+}
+
+/* Accessible focus styling */
+:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+
+/* Leaflet map warm rounded integration */
+.leaflet-container {
+  border-radius: 1.5rem !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  z-index: 10;
+  border: 1px solid #ede7de !important;
+  box-shadow: var(--shadow-tactile-sm);
+}
+
+.leaflet-control-zoom {
+  border-radius: 1rem !important;
+  overflow: hidden;
+  border: 1px solid #ede7de !important;
+  box-shadow: 0 2px 8px rgba(45, 36, 27, 0.08) !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: #ffffff !important;
+  color: #44403c !important;
+  font-weight: 700 !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  transition: background-color 0.15s ease;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #f5f0e6 !important;
+  color: #1c1917 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 1.25rem !important;
+  padding: 4px !important;
+  box-shadow: var(--shadow-tactile-md) !important;
+  border: 1px solid #ede7de !important;
+  background: #ffffff !important;
+}
+
+/* Generous button and card transitions */
+.warm-card {
+  background-color: #ffffff;
+  border: 1px solid #ede7de;
+  border-radius: 1.75rem;
+  box-shadow: var(--shadow-tactile-sm);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.warm-card:hover {
+  box-shadow: var(--shadow-tactile-md);
+}
+
+/* Touch friendly minimum click targets */
+button, select, input, a {
+  touch-action: manipulation;
+}
